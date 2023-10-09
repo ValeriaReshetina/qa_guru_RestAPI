@@ -1,8 +1,8 @@
 package guru.qa.classworkTests;
 
-import guru.qa.models.LoginBodyLombokModel;
-import guru.qa.models.LoginResponseLombokModel;
-import guru.qa.models.MissingPasswordResponseLombokModel;
+import guru.qa.models.login.LoginBodyLombokModel;
+import guru.qa.models.login.LoginResponseLombokModel;
+import guru.qa.models.registration.MissingPasswordResponseLombokModel;
 import io.qameta.allure.restassured.AllureRestAssured;
 import org.junit.jupiter.api.Test;
 

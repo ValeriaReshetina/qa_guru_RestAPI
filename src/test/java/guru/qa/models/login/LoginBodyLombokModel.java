@@ -1,4 +1,4 @@
-package guru.qa.models;
+package guru.qa.models.login;
 
 public class LoginBodyLombokModel {
     String email, password;

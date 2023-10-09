@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.given;
 import static io.restassured.http.ContentType.JSON;
 import static org.hamcrest.Matchers.is;
 
-public class ReqresTests {
+public class ReqresTests extends TestBase {
 
     @DisplayName("Successful creation of user")
     @Test
@@ -19,7 +19,7 @@ public class ReqresTests {
                 .contentType(JSON)
                 .body("{ \"name\": \"Valeria Reshetina\", \"job\": \"QA\" }")
                 .when()
-                .post("https://reqres.in/api/users")
+                .post("/users")
                 .then()
                 .log().status()
                 .log().body()
@@ -36,7 +36,7 @@ public class ReqresTests {
                 .contentType(JSON)
                 .body("{ \"name\": \"Valeria Reshetina\", \"job\": \"QA\" }")
                 .when()
-                .delete("https://reqres.in/api/users/2")
+                .delete("/users/2")
                 .then()
                 .log().status()
                 .log().body()
@@ -53,7 +53,7 @@ public class ReqresTests {
                 .contentType(JSON)
                 .body("{ \"email\": \"eve.holt@reqres.in\", \"password\": \"pistol\" }")
                 .when()
-                .post("https://reqres.in/api/register")
+                .post("/register")
                 .then()
                 .log().status()
                 .log().body()
@@ -70,7 +70,7 @@ public class ReqresTests {
                 .contentType(JSON)
                 .body("{ \"email\": \"eve.holt@reqres.in\" }")
                 .when()
-                .post("https://reqres.in/api/register")
+                .post("/register")
                 .then()
                 .log().status()
                 .log().body()
@@ -85,7 +85,7 @@ public class ReqresTests {
                 .log().method()
                 .log().body()
                 .contentType(JSON)
-                .get("https://reqres.in/api/users?page=2")
+                .get("/users?page=2")
                 .then()
                 .log().status()
                 .log().body()

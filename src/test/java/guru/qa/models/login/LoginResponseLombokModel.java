@@ -1,4 +1,4 @@
-package guru.qa.models;
+package guru.qa.models.login;
 
 public class LoginResponseLombokModel {
     String token;
