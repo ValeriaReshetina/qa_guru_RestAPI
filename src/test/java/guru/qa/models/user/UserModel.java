@@ -10,9 +10,9 @@ public class UserModel {
     int id;
     String email;
     @JsonProperty("first_name")
-    String first_name;
+    String firstName;
     @JsonProperty("last_name")
-    String last_name;
+    String lastName;
     String avatar;
 }
 

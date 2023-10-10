@@ -11,10 +11,10 @@ import java.util.ArrayList;
 public class UserListResponseModel {
     int page;
     @JsonProperty("per_page")
-    int per_page;
+    int perPage;
     int total;
     @JsonProperty("total_pages")
-    int total_pages;
+    int totalPages;
     ArrayList<UserModel> data;
     SupportModel support;
 }
