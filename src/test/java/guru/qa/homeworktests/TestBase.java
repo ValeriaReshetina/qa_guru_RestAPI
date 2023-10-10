@@ -1,4 +1,4 @@
-package guru.qa.homeworkTests;
+package guru.qa.homeworktests;
 
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeAll;

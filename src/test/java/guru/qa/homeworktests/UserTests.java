@@ -1,4 +1,4 @@
-package guru.qa.homeworkTests;
+package guru.qa.homeworktests;
 
 import guru.qa.models.user.UserListResponseModel;
 import org.junit.jupiter.api.Test;

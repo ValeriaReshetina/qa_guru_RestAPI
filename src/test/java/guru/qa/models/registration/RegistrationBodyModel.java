@@ -1,5 +1,8 @@
 package guru.qa.models.registration;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class RegistrationBodyModel {
     private String email, password;
 

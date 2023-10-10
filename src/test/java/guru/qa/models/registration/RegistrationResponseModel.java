@@ -1,5 +1,8 @@
 package guru.qa.models.registration;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class RegistrationResponseModel {
     int id;
     String token;

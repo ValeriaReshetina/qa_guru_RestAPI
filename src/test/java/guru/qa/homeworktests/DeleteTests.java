@@ -1,4 +1,4 @@
-package guru.qa.homeworkTests;
+package guru.qa.homeworktests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

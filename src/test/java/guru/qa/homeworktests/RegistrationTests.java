@@ -1,4 +1,4 @@
-package guru.qa.homeworkTests;
+package guru.qa.homeworktests;
 
 import guru.qa.models.registration.MissingPasswordResponseLombokModel;
 import guru.qa.models.registration.RegistrationBodyModel;
